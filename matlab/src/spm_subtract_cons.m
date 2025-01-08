@@ -31,6 +31,7 @@ matlabbatch{1}.spm.util.imcalc.options.dtype = 4;
 
 % Save and run batch
 save(batchfile, 'matlabbatch');
+spm_jobman('run', matlabbatch);
 
 % spm_figure('Print',F)
 
